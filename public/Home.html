@@ -20,44 +20,28 @@
             <a href="#" class="text-gray-300 hover:text-white">Edit</a>
         </div>
     </nav>
-    <div class="w-full h-screen flex justify-center mt-8">
-        <div class="w-[65%] shadow-[0_0_30px_#ccc] flex items-start flex-col max-w-[500px] mb-10">
-            <div class="w-[100%] h-[10%] bg-gray-500 "></div>
-            <form class="w-full h-[100%]" method="POST">
-
-                <label class="text-b text-[12px] flex mt-3 ml-6">Image Profile</label>
-                <input type="file" name="imageProfile" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] file:text-[12px] "/>
-
-                <label class="text-b text-[12px] flex mt-3 ml-6">name</label>
-                <input type="text" name="username" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px]"/>
-
-                <lebel class="text-b text-[12px] flex mt-2 ml-6">surname</lebel>
-                <input type="text" name="usersurname" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] "/>
-
-                <label class="text-b text-[12px] flex mt-3 ml-6">Email</label>
-                <input type="email" name="email" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] "/>
-
-                <label class="text-b text-[12px] flex mt-3 ml-6">Phone</label>
-                <input type="tel" name="phone" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] "/>
-
-                <label class="text-b text-[12px] flex mt-3 ml-6">birthday</label>
-                <input type="date" name="birthday" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] pl-1"/>
-
-                <label class="text-b text-[12px] flex mt-3 ml-6">gender</label>
-                <select class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] pl-1">
-                    <option value="other">not specified</option>
-                    <option value="M">Male</option>
-                    <option value="F">Female</option>
-                    <option value="L">LQBT+</option>
-                </select>
-
-                <label class="text-b text-[12px] flex mt-3 ml-6">address</label>
-                <input type="text" name="address" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] "/>
-
-                <label class="text-b text-[12px] flex mt-3 ml-6">Password</label>
-                <input type="password" name="password" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] "/>
-
-            </form>
+    <div class="w-full h-[auto] flex justify-center">
+        <div class="flex flex-col shadow-[0_0_40px_#ccc] w-[65%] max-w-[900px] min-h-[100px] h-[auto] mt-8 mb-10">
+            <div class="w-[100%] h-[35px] bg-blue-500 flex justify-center items-center">
+                <h1 class="text-white text-[18px] font-bold p-3">Welcome to website</h1>
+            </div>
+            <div class="flex flex-row justify-between items-center overflow-x-auto p-3 gap-4 mt-6 mb-8">
+                <div class="w-full min-w-[250px] h-[150px] flex flex-col items-center border-[2px] border-gray-300 rounded-md p-2 gap-2">                    
+                    <h1 class="text-b text-[18px] font-bold p-3">Sigin</h1>
+                    <h3 class="text-b text-[12px] font-bold text-gray-400 -mt-3"> สมัครสมาชิกใหม่ เพื่อใช้งานระบบ</h3>
+                    <button class="w-[50%] h-[30px] bg-blue-500 text-white text-[12px] rounded-md hover:bg-blue-600">ลงทะเบียน</button>
+                </div>
+                <div class="w-full min-w-[250px] h-[150px] flex flex-col items-center border-[2px] border-gray-300 rounded-md p-2 gap-2">                    
+                    <h1 class="text-b text-[18px] font-bold p-3">Profile</h1>
+                    <h3 class="text-b text-[12px] font-bold text-gray-400 -mt-3"> ดูข้อมูลโปรไฟล์ของคุณ</h3>
+                    <button class="w-[50%] h-[30px] bg-blue-500 text-white text-[12px] rounded-md hover:bg-blue-600">ลงทะเบียน</button>
+                </div>
+                <div class="w-full min-w-[250px] h-[150px] flex flex-col items-center border-[2px] border-gray-300 rounded-md p-2 gap-2">                    
+                    <h1 class="text-b text-[18px] font-bold p-3">Edit</h1>
+                    <h3 class="text-b text-[12px] font-bold text-gray-400 -mt-3"> แก้ไขข้อมูลส่วนตัวของคุณ</h3>
+                    <button class="w-[50%] h-[30px] bg-blue-500 text-white text-[12px] rounded-md hover:bg-blue-600">ลงทะเบียน</button>
+                </div>
+            </div>
         </div>
     </div>
 </html>

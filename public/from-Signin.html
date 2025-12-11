@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeMovie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--http://localhost/WebsiteLogin_Demo/public/from-Signin.html-->
+</head>
+<body>
+    <nav class="flex justify-between bg-gray-900 p-4 sticky top-0">
+
+        <div class="flex-1">
+            <a href="#" class="text-white text-lg font-bold">HomeWebsite</a>
+        </div>
+        <div class="flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-white">Home</a>
+            <a href="#" class="text-gray-300 hover:text-white">Login</a>
+            <a href="#" class="text-gray-300 hover:text-white">signin</a>
+            <a href="#" class="text-gray-300 hover:text-white">Edit</a>
+        </div>
+    </nav>
+    <div class="w-full h-[auto] flex justify-center mt-8">
+        <div class="w-[65%] shadow-[0_0_30px_#ccc] flex items-start flex-col max-w-[500px] mb-10 flex ">
+            <div class="w-[100%] h-[10%] bg-blue-500 ">
+                <h1 class="text-white text-center text-[18px] font-bold p-3">Sign in</h1>
+            </div>
+            <form class="w-full h-[100%]" method="POST">
+
+                <label class="text-b text-[12px] flex mt-3 ml-6">Image Profile</label>
+                <input type="file" name="imageProfile" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] file:text-[12px] "/>
+
+                <label class="text-b text-[12px] flex mt-3 ml-6">name</label>
+                <input type="text" name="username" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] pl-2" required />
+
+                <lebel class="text-b text-[12px] flex mt-2 ml-6">surname</lebel>
+                <input type="text" name="usersurname" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] pl-2" required />
+
+                <label class="text-b text-[12px] flex mt-3 ml-6">Email</label>
+                <input type="email" name="email" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] pl-2" required />
+
+                <label class="text-b text-[12px] flex mt-3 ml-6">Phone</label>
+                <input type="tel" name="phone" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] pl-2" required />
+
+                <label class="text-b text-[12px] flex mt-3 ml-6">birthday</label>
+                <input type="date" name="birthday" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] text-gray-500 pl-2" required />
+
+                <label class="text-b text-[12px] flex mt-3 ml-6">gender</label>
+                <select class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] text-gray-500 pl-1" required >
+                    <option value="" disabled selected hidden>เลือกเพศ...</option>
+                    <option value="other">not specified</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="L">LQBT+</option>
+                </select>
+
+                <label class="text-b text-[12px] flex mt-3 ml-6">address</label>
+                <textarea class="border border-gray-300 rounded-md w-[90%] h-[80px] mt-2 ml-5 p-2 text-[12px] pl-1" placeholder="พิมพ์ข้อความที่นี่..."></textarea>
+
+                <label class="text-b text-[12px] flex mt-3 ml-6">Password</label>
+                <input type="password" name="password" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] pl-2" required />
+
+                <label class="text-b text-[12px] flex mt-3 ml-6">confirm Password</label>
+                <input type="password" name="password" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] pl-2" required />
+
+                <button type="submit" class="bg-gray-500 text-white rounded-md w-[25%] h-[30px] mt-6 ml-[44%] mb-5 hover:bg-gray-600 text-[14px]">cancel</button>
+                <button type="submit" class="bg-blue-500 text-white rounded-md w-[25%] h-[30px] hover:bg-blue-600 text-[14px]">Save</button>
+            </form>
+        </div>
+    </div>
+</html>
