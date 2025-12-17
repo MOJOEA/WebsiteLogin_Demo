@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeMovie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--http://localhost/WebsiteLogin_Demo/public/from-Edit.html-->
+</head>
+<body>
+    <nav class="flex justify-between bg-gray-900 p-4 sticky top-0">
+
+        <div class="flex-1">
+            <a href="#" class="text-white text-lg font-bold">HomeWebsite</a>
+        </div>
+        <div class="flex space-x-4">
+            <a href="http://127.0.0.1:3000/public/Home.html" class="text-gray-500 hover:text-white">Home</a>
+            <a href="http://127.0.0.1:3000/public/from-Profile.html" class="text-gray-500 hover:text-white">Login</a>
+            <a href="http://127.0.0.1:3000/public/from-Signin.html" class="text-gray-500 hover:text-white">signin</a>
+            <a href="http://127.0.0.1:3000/public/from-Edit.html" class="text-gray-500 hover:text-white">Edit</a>
+        </div>
+    </nav>
+    <div class="w-full h-[auto] flex justify-center mt-8">
+        <div class="w-[80%] shadow-[0_0_30px_#ccc] flex items-start flex-col max-w-[800px] mb-10 flex ">
+            <div class="w-full h-[180%] bg-blue-500 flex flex-col items-center pt-4 pb-4  ">
+                <div class="bg-[url('img/profile.png')] bg-cover bg-center w-[120px] h-[120px] rounded-full"></div>
+                <label class="text-b text-[18px] text-white mt-2">Mr.Tada Thong-on</label>
+                <label class="text-b text-[12px] text-gray-300 mt-1">สมาชิกตั้งแต่ 11 ธันวาคม 2025</label>
+            </div>
+            <div class=" w-full h-auto py-5 flex flex-row justify-between items-center p-2 gap-2">
+                <div class="w-full h-auto grid grid-cols-2">
+                    <div class="p-4 flex flex-col gap-1">
+                        <p class="text-[14px] text-gray-500 mb-0">ชื่อ</p>
+                        <h5 class="text-[13px] font-bold leading-tight mt-0">Tada</h5>
+                        <hr class="mt-1 border-t-2 border-gray-300">
+                    </div>
+                    <div class="p-4 flex flex-col gap-1">
+                        <p class="text-[14px] text-gray-500 mb-0">นามสกุล</p>
+                        <h5 class="text-[13px] font-bold leading-tight mt-0">Thong-on</h5>
+                        <hr class="mt-1 border-t-2 border-gray-300">
+                    </div>
+                    <div class="p-4 flex flex-col gap-1">
+                        <p class="text-[14px] text-gray-500 mb-0">Email</p>
+                        <h5 class="text-[13px] font-bold leading-tight mt-0">67011212035@mas.ac.th</h5>
+                        <hr class="mt-1 border-t-2 border-gray-300">
+                    </div>
+                    <div class="p-4 flex flex-col gap-1">
+                        <p class="text-[14px] text-gray-500 mb-0">เบอร์โทรศัพท์</p>
+                        <h5 class="text-[13px] font-bold leading-tight mt-0">0800564355</h5>
+                        <hr class="mt-1 border-t-2 border-gray-300">
+                    </div>
+                    <div class="p-4 flex flex-col gap-1">
+                        <p class="text-[14px] text-gray-500 mb-0">วันเกิด</p>
+                        <h5 class="text-[13px] font-bold leading-tight mt-0">15 มีนาคม 2006</h5>
+                        <hr class="mt-1 border-t-2 border-gray-300">
+                    </div>
+                    <div class="p-4 flex flex-col gap-1">
+                        <p class="text-[14px] text-gray-500 mb-0">เพศ</p>
+                        <h5 class="text-[13px] font-bold leading-tight mt-0">ชาย</h5>
+                        <hr class="mt-1 border-t-2 border-gray-300">
+                    </div>
+                    <div class="p-4 flex flex-col gap-1 col-span-2">
+                        <p class="text-[14px] text-gray-500 mb-0">ที่อยู่</p>
+                        <h5 class="text-[13px] font-bold leading-tight mt-0">
+                            256 หมู่ 20 ตำบล ขามเรียง อำเภอกันทรวิชัย มหาสารคาม 44150
+                            <hr class="mt-1 border-t-2 border-gray-300">
+                    </div>
+                    <div class="p-4 flex flex-row gap-2 col-span-2 justify-end mt-5">
+                        <button type="button" class="bg-gray-500 text-white rounded-md w-[15%] h-[30px] hover:bg-gray-600 text-[14px]"> Cancel</button>
+                        <button type="submit" class="bg-blue-500 text-white rounded-md w-[15%] h-[30px] hover:bg-blue-600 text-[14px]" 
+                        onclick="window.location.href='http://127.0.0.1:3000/public/from-Edit.html'">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-900 text-white text-[15px] text-center p-3">
+    </footer>
+</html>
