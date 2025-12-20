@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeMovie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--http://localhost/WebsiteLogin_Demo/public/from-Signin.html-->
+</head>
+<body>
+    <nav class="flex justify-between bg-gray-900 p-4 sticky top-0">
+
+        <div class="flex-1">
+            <a href="#" class="text-white text-lg font-bold">HomeWebsite</a>
+        </div>
+        <div class="flex space-x-4">
+            <a href="/public/CEO.html" class="text-gray-500 hover:text-white">Home</a>
+            <a href="/public/from-Profile.html" class="text-gray-500 hover:text-white">Login</a>
+            <a href="http://127.0.0.1:3000/public/from-Signin.html" class="text-white hover:text-white">signin</a>
+            <a href="http://127.0.0.1:3000/public/from-Profile.html" class="text-gray-500 hover:text-white">Profile</a>
+            <a href="http://127.0.0.1:3000/public/from-Edit.html" class="text-gray-500 hover:text-white">Edit</a>
+        </div>
+    </nav>
+    <div class="w-full h-[auto] flex justify-center mt-8">
+        <div class="w-[65%] shadow-[0_0_30px_#ccc] flex items-start flex-col max-w-[500px] mb-10 flex border rounded-[5%]">
+            <div class="w-[100%] h-[20%] bg-gray-900 border rounded-t-[15px]">
+                <h1 class="text-white text-center text-[18px] font-bold p-3">Login</h1>
+            </div>
+            <form class="w-full h-[100%]" method="POST">
+
+                <label class="text-b text-[12px] flex mt-3 ml-6">name</label>
+                <input type="text" name="username" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] pl-2" required />
+
+                <label class="text-b text-[12px] flex mt-3 ml-6">Email</label>
+                <input type="email" name="email" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] pl-2" required />
+
+                <label class="text-b text-[12px] flex mt-3 ml-6">Password</label>
+                <input type="password" name="password" id="password" class="border border-gray-300 rounded-md w-[85%] h-[26px] mt-2 ml-5 text-[12px] pl-2" required />
+                <button type="button" class="border border-gray-300 rounded-md h-[26px]" onclick="togglePassword()">👁️</button>
+                <script>
+                function togglePassword() {
+                    const input = document.getElementById("password");
+                    input.type = input.type === "password" ? "text" : "password";}
+                </script>
+
+                <button type="submit" class="bg-gray-500 text-white rounded-md w-[25%] h-[30px] mt-6 ml-[44%] mb-5 hover:bg-gray-600 text-[14px]">cancel</button>
+                <button type="submit" class="bg-gray-900 text-white rounded-md w-[25%] h-[30px] hover:bg-blue-600 text-[14px]"
+                onclick="window.location.href='/public/CEO.html'">Login</button>
+            </form>
+        </div>
+    </div>
+</html>
