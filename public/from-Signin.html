@@ -8,21 +8,17 @@
     <!--http://localhost/WebsiteLogin_Demo/public/from-Signin.html-->
 </head>
 <body>
-    <nav class="flex justify-between bg-gray-900 p-4 sticky top-0">
+    <div id="nav"></div>
+    <script>fetch("/public/nav.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("nav").innerHTML = data;
+            });
+    </script>
 
-        <div class="flex-1">
-            <a href="#" class="text-white text-lg font-bold">HomeWebsite</a>
-        </div>
-        <div class="flex space-x-4">
-            <a href="http://127.0.0.1:3000/public/Home.html" class="text-gray-500 hover:text-white">Home</a>
-            <a href="http://127.0.0.1:3000/public/from-Profile.html" class="text-gray-500 hover:text-white">Login</a>
-            <a href="http://127.0.0.1:3000/public/from-Signin.html" class="text-white hover:text-white">signin</a>
-            <a href="http://127.0.0.1:3000/public/from-Edit.html" class="text-gray-500 hover:text-white">Edit</a>
-        </div>
-    </nav>
     <div class="w-full h-[auto] flex justify-center mt-8">
         <div class="w-[65%] shadow-[0_0_30px_#ccc] flex items-start flex-col max-w-[500px] mb-10 flex ">
-            <div class="w-[100%] h-[10%] bg-blue-500 ">
+            <div class="w-[100%] h-[10%] bg-gray-900 ">
                 <h1 class="text-white text-center text-[18px] font-bold p-3">Sign in</h1>
             </div>
             <form class="w-full h-[100%]" method="POST">
@@ -58,7 +54,13 @@
                 <textarea class="border border-gray-300 rounded-md w-[90%] h-[80px] mt-2 ml-5 p-2 text-[12px] pl-1" placeholder="พิมพ์ข้อความที่นี่..."></textarea>
 
                 <label class="text-b text-[12px] flex mt-3 ml-6">Password</label>
-                <input type="password" name="password" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] pl-2" required />
+                <input type="password" name="password" id="password" class="border border-gray-300 rounded-md w-[85%] h-[26px] mt-2 ml-5 text-[12px] pl-2" required />
+                <button type="button" class="border border-gray-300 rounded-md h-[26px]" onclick="togglePassword()">👁️</button>
+                <script>
+                function togglePassword() {
+                    const input = document.getElementById("password");
+                    input.type = input.type === "password" ? "text" : "password";}
+                </script>
 
                 <label class="text-b text-[12px] flex mt-3 ml-6">confirm Password</label>
                 <input type="password" name="password" class="border border-gray-300 rounded-md w-[90%] h-[26px] mt-2 ml-5 text-[12px] pl-2" required />
